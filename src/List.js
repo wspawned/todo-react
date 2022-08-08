@@ -17,7 +17,11 @@ const List = (props) => {
             </button>
             <p className= {Completed? "task-completed" : "task" }
             > Task {props.number} : {props.task} </p>  
-            <button className="delete-button">delete</button>
+            <button className="delete-button"
+            onClick= {() => {props.delClick()
+            setCompleted(false)}
+            }
+            >delete</button>
         </div>
     )
 }

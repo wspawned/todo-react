@@ -5,6 +5,13 @@ const TaskSubmit = () => {
     const [task, setTask] = useState("");
     const [taskList, setTaskList] = useState([]);
 
+    const deleteTask = (i) => {
+        const currentList = taskList.slice();
+        const List = currentList.filter( (e, index) =>index !== i );
+
+        return(setTaskList(List))
+    }
+
     return (
         <div>
         <form
@@ -33,7 +40,9 @@ const TaskSubmit = () => {
                     <List
                     key= {index}
                     number= {index+1}
-                    task= {task} />
+                    task= {task}
+                    delClick= { () => deleteTask(index)}
+                    />
                 )
             })}
         </div>
