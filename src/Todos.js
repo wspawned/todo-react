@@ -1,33 +1,46 @@
 import { useState } from "react";
-
-
+import TaskSubmit from "./TaskSubmit";
 
 const Todos = () => {
-
-    const [task, setTask] = useState("");
-    const [taskList, setTaskList] = useState([]);
 
 
     return (
       <div className="body-container">
         <header>todos</header>
 
-        <form
-        >
-          <input
-            id="addTodo"
-            value={task}
-            placeholder="Add Todo..."
-            onChange={(e) => setTask(e.target.value)}
-          />
-          <button 
-          type="submit">Submit</button>
-        </form>
+        <TaskSubmit />
 
-        
+        <div>
+
+        </div>
+
       </div>
     );
 }
+
+
+
+export default Todos;
+
+
+
+
+
+
+
+
+
+{/* <div>
+            {list.map(task => {
+                return(
+                    <p> {task} </p>
+                )
+            })}
+        </div> */}
+
+
+
+
 
 // handleClick = (i) => {
 //     const submit = task;
@@ -36,4 +49,3 @@ const Todos = () => {
 //     return ( setTaskList(currentList.concat(submit)) )
 // }
 
-export default Todos;
