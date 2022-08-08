@@ -39,6 +39,49 @@ button {
     color: rgb(82, 80, 80);
     background: transparent;
     border: none;
+    
+}
+
+.submit {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.task {
+    width: 80%;
+    display: inline-block;
+    flex-grow: 2;
+    margin: auto;
+}
+
+.task-completed {
+    width: 80%;
+    display: inline-block;
+    flex-grow: 2;
+    margin: auto;
+    text-decoration: line-through;
+}
+
+.check-button {
+    width: 10%;
+    height: 30px;
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+}
+
+.delete-button {
+    width: 10%;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    padding: 0;
 }
 
 

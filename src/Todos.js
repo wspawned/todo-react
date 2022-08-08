@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TaskSubmit from "./TaskSubmit";
 
 const Todos = () => {
@@ -10,9 +9,6 @@ const Todos = () => {
 
         <TaskSubmit />
 
-        <div>
-
-        </div>
 
       </div>
     );

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import List from "./List";
 
-
 const TaskSubmit = () => {
     const [task, setTask] = useState("");
     const [taskList, setTaskList] = useState([]);
@@ -23,14 +22,23 @@ const TaskSubmit = () => {
             placeholder="Add Todo..."
             onChange={(e) => setTask(e.target.value)}
           />
-          <button 
+          <button
+          className="submit"
           type="submit">Submit</button>
         </form>
          
-
+        <div>
+            {taskList.map((task,index) => {
+                return(
+                    <List
+                    key= {index}
+                    number= {index+1}
+                    task= {task} />
+                )
+            })}
+        </div>
         
 
-        <List list = {taskList} />
 
         </div>
     )
