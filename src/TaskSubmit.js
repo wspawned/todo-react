@@ -53,8 +53,14 @@ const TaskSubmit = () => {
                 )
             })}
         </div>
-        
+        <div className="button-container" >
+            <button className="clear-completed"
+            >Clear Completed</button>
 
+            <button className="clear-all"
+            onClick={() => setTaskList([]) }
+            >Clear All</button>
+        </div>
 
         </div>
     )

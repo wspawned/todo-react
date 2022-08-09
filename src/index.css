@@ -113,4 +113,14 @@ form > button {
     margin-right: 20px;
 }
 
+.button-container {
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.clear-all {
+    padding-right: 14px;
+}
+
 
