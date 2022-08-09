@@ -34,7 +34,7 @@ const TaskSubmit = () => {
           type="submit">Submit</button>
         </form>
          
-        <div>
+        <div className="list-container">
             {taskList.map((task,index) => {
                 return(
                     <List

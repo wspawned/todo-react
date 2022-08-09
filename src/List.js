@@ -6,7 +6,6 @@ const List = (props) => {
     const [Completed, setCompleted] = useState(false);
 
     
-
     return(
         <div className="task-container">
             <button className="check-button"
@@ -19,20 +18,11 @@ const List = (props) => {
             > Task {props.number} : {props.task} </p>  
             <button className="delete-button"
             onClick= {() => {props.delClick()
-            setCompleted(false)}
-            }
-            >delete</button>
+            
+            }}
+            >Delete</button>
         </div>
     )
 }
 
 export default List;
-
-
-
-    // const toggleCompleted = () => {
-    //     setCompleted(current => !current )
-    // }
-    //// onClick={toggleCompleted}
-
-
