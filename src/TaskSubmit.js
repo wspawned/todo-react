@@ -14,6 +14,19 @@ const TaskSubmit = () => {
         return(setTaskList(List))
     }
 
+    const toggleCompleted = (index) => {
+        const currentList = taskList.slice()
+        currentList[index].isCompleted = !taskList[index].isCompleted
+        const List = currentList
+        return ( setTaskList(List) )
+    }
+
+    const deleteCompleted = () => {
+        const currentList = taskList.slice()
+        const List = currentList.filter( (e) => e.isCompleted === false )
+        return ( setTaskList(List) )
+    }
+
     return (
         <div>
         <form
@@ -22,8 +35,8 @@ const TaskSubmit = () => {
             setKey(key+1);
             const currentList = taskList.slice();
             const List =  currentList.concat(
-                {key: key, task: task});
-                // isCompleted: isCompleted
+                {key: key, task: task, isCompleted: false });
+                
             setTaskList(List);
             setTask("");
         }}
@@ -46,15 +59,18 @@ const TaskSubmit = () => {
                     <List
                     key= {elm.key}
                     task= {elm.task}
-                    // isCompleted={elm.isCompleted}
+                    isCompleted={elm.isCompleted}
                     number= {index+1}
                     delClick= { () => deleteTask(elm.key)}
+                    checkCompleted= { () => toggleCompleted(index) }
                     />
                 )
             })}
         </div>
-        <div className="button-container" >
+        <div 
+        className= {taskList.length ? "button-container" : "button-container-hidden" } > 
             <button className="clear-completed"
+            onClick={ () => deleteCompleted() }
             >Clear Completed</button>
 
             <button className="clear-all"

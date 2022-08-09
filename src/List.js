@@ -13,15 +13,14 @@ const List = (props) => {
             <button className="check-button"
             onClick={() => {
                 setCompleted(!Completed)
+                props.checkCompleted()
             } }
             > { Completed? "✓" : "□" }
             </button>
             <p className= {Completed? "task-completed" : "task" }
             > Task {props.number} : {props.task} </p>  
             <button className="delete-button"
-            onClick= {() => {props.delClick()
-            
-            }}
+            onClick= {() => {props.delClick()}}
             >Delete</button>
         </div>
     )
