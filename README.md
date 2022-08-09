@@ -1,6 +1,6 @@
 # Notes
 
-Move the completed condition to task-container div<br><br>
+~~Fix the deleting of completed tasks~~<br><br>
 ~~Border of the task container is not visible~~ <br> border: 2px solid gray;
 <br><br><br><br>
 Does something wrong about using useState hook as boolean?<br><br>

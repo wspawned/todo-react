@@ -7,7 +7,9 @@ const List = (props) => {
 
     
     return(
-        <div className="task-container">
+        <div className="task-container"
+        
+        >
             <button className="check-button"
             onClick={() => {
                 setCompleted(!Completed)
@@ -26,3 +28,5 @@ const List = (props) => {
 }
 
 export default List;
+
+// not adjusted according to changes
