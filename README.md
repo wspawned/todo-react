@@ -1,7 +1,9 @@
 # Todo List
 
-Deployed link of project; <br>
-https://main.d3ddq8l1o2h7fy.amplifyapp.com/<br>
+[Deployed project link](https://main.d3ddq8l1o2h7fy.amplifyapp.com/)
+
+![image](https://user-images.githubusercontent.com/80424496/185691777-e6127962-749e-4a86-9cfd-20c47ee435ed.png)
+
 <br>
 Todo List App that:
 * Lets you add tasks,
