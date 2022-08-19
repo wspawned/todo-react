@@ -1,5 +1,18 @@
-# Notes
+# Todo List
 
+Deployed link of project; <br>
+https://main.d3ddq8l1o2h7fy.amplifyapp.com/<br>
+<br>
+Todo List App that:
+* Lets you add tasks,
+* Allows to mark completed ones,
+* Includes delete button for each task,
+* Clear button for completed tasks,
+* Clear all button.
+<br>
+<br>
+
+# Notes
 ~~Fix the deleting of completed tasks~~<br><br>
 ~~Border of the task container is not visible~~ <br> border: 2px solid gray;
 <br><br><br><br>
